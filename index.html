@@ -1,0 +1,196 @@
+
+## 3. GitHub Pages 页面 (`index.html`)
+
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker 一键安装配置脚本</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css">
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+        .terminal {
+            background: #1e1e1e;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #2ea44f;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            margin: 10px 5px;
+        }
+        .btn:hover {
+            background: #2c974b;
+        }
+        .platform-icons {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 30px 0;
+        }
+        .platform-icon {
+            text-align: center;
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body class="markdown-body">
+    <h1 align="center">🐳 Docker 一键安装与镜像加速脚本</h1>
+    
+    <p align="center">一个命令，全平台 Docker 安装与国内镜像加速配置</p>
+    
+    <div align="center">
+        <a href="#一键安装" class="btn">🚀 一键安装</a>
+        <a href="https://github.com/yourusername/docker-mirror-setup" class="btn">📁 查看源码</a>
+        <a href="#使用教程" class="btn">📖 使用教程</a>
+    </div>
+    
+    <div class="platform-icons">
+        <div class="platform-icon">
+            🐧<br>
+            <small>Linux</small>
+        </div>
+        <div class="platform-icon">
+            🍎<br>
+            <small>macOS</small>
+        </div>
+        <div class="platform-icon">
+            🪟<br>
+            <small>Windows</small>
+        </div>
+    </div>
+    
+    <h2 id="一键安装">✨ 一键安装命令</h2>
+    
+    <div class="terminal">
+        <span style="color: #50fa7b">$</span> bash &lt;(curl -sL https://raw.githubusercontent.com/yourusername/docker-mirror-setup/main/setup_docker_mirror.sh)
+    </div>
+    
+    <p>或者使用 wget：</p>
+    
+    <div class="terminal">
+        <span style="color: #50fa7b">$</span> bash &lt;(wget -qO- https://raw.githubusercontent.com/yourusername/docker-mirror-setup/main/setup_docker_mirror.sh)
+    </div>
+    
+    <h2 id="使用教程">📚 使用教程</h2>
+    
+    <h3>支持的平台</h3>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>平台</th>
+                <th>支持版本</th>
+                <th>安装方式</th>
+                <th>配置方式</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Linux</strong></td>
+                <td>Ubuntu 16.04+<br>CentOS 7+<br>Debian 9+</td>
+                <td>全自动安装</td>
+                <td>自动配置</td>
+            </tr>
+            <tr>
+                <td><strong>macOS</strong></td>
+                <td>macOS 10.15+</td>
+                <td>引导安装 Docker Desktop</td>
+                <td>手动配置指南</td>
+            </tr>
+            <tr>
+                <td><strong>Windows</strong></td>
+                <td>Windows 10/11<br>(需 WSL2)</td>
+                <td>引导安装 Docker Desktop</td>
+                <td>手动配置指南</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h3>快速开始</h3>
+    
+    <ol>
+        <li>打开终端（Windows 用户使用 Git Bash 或 PowerShell）</li>
+        <li>复制上面的安装命令并执行</li>
+        <li>按照脚本提示进行操作</li>
+        <li>完成！享受快速的 Docker 镜像下载</li>
+    </ol>
+    
+    <h3>脚本选项</h3>
+    
+    <div class="terminal">
+        <span style="color: #50fa7b">$</span> ./setup_docker_mirror.sh --help<br><br>
+        使用说明:<br>
+          ./setup_docker_mirror.sh [选项]<br><br>
+        选项:<br>
+          -h, --help     显示此帮助信息<br>
+          -v, --version  显示版本信息<br>
+          -m, --mirror URL  使用指定的镜像源
+    </div>
+    
+    <h2>📞 支持与反馈</h2>
+    
+    <p>遇到问题？请：</p>
+    
+    <ul>
+        <li>查看 <a href="https://github.com/yourusername/docker-mirror-setup/issues">GitHub Issues</a></li>
+        <li>提交新的 Issue 并包含：系统版本和错误信息</li>
+        <li>或通过邮件联系我们</li>
+    </ul>
+    
+    <h2>📄 许可证</h2>
+    
+    <p>本项目采用 MIT 许可证。查看 <a href="https://github.com/yourusername/docker-mirror-setup/blob/main/LICENSE">LICENSE</a> 文件了解详情。</p>
+    
+    <hr>
+    
+    <footer align="center">
+        <p>© 2023 Docker Mirror Setup. 保持更新，快乐编码！</p>
+        <p>
+            <small>更新于：<span id="update-date">2023-10-01</span></small>
+        </p>
+    </footer>
+    
+    <script>
+        // 自动更新日期
+        document.getElementById('update-date').textContent = new Date().toISOString().split('T')[0];
+        
+        // 添加复制功能
+        document.querySelectorAll('.terminal').forEach(term => {
+            term.style.cursor = 'pointer';
+            term.title = '点击复制命令';
+            term.addEventListener('click', function() {
+                const text = this.textContent.replace(/\$\s*/, '');
+                navigator.clipboard.writeText(text).then(() => {
+                    const original = this.textContent;
+                    this.textContent = '✅ 已复制到剪贴板！';
+                    setTimeout(() => {
+                        this.textContent = original;
+                    }, 1500);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
