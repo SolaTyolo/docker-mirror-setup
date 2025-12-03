@@ -13,11 +13,16 @@
 ```bash
 # 方法1：直接下载执行
 bash <(curl -sL https://raw.githubusercontent.com/SolaTyolo/docker-mirror-setup/main/setup_docker_mirror.sh)
+```
 
+```bash
 # 方法2：先下载后执行
 curl -O https://raw.githubusercontent.com/SolaTyolo/docker-mirror-setup/main/setup_docker_mirror.sh
 chmod +x setup_docker_mirror.sh
 ./setup_docker_mirror.sh
+```
 
+```bash
 # 方法3：使用wget
 bash <(wget -qO- https://raw.githubusercontent.com/SolaTyolo/docker-mirror-setup/main/setup_docker_mirror.sh)
+```
